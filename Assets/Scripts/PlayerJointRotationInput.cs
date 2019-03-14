@@ -4,13 +4,26 @@ using UnityEngine;
 
 public class PlayerJointRotationInput : MonoBehaviour
 {
-    public KeyCode key;
+    [SerializeField]
+    private KeyCode key;
 
-    public Rigidbody2D targetRigidBody;
+    [SerializeField]
+    private Rigidbody2D targetRigidBody;
 
-    public float maxIntensity;
+    [SerializeField]
+    private float maxIntensity;
 
-    float direction;
+    [SerializeField]
+    private float direction = 1.0f;
+
+    [SerializeField]
+    private float minScale = 1.0f;
+
+    [SerializeField]
+    private float maxScale = 2.0f;
+
+    [SerializeField]
+    private GameObject visualIndicator;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +35,11 @@ public class PlayerJointRotationInput : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(this.key)) {
-            Debug.Log("Pressed!");
-            this.targetRigidBody.AddTorque(this.maxIntensity);
+            this.targetRigidBody.AddTorque(this.direction * this.maxIntensity);
         }
+        float currentScale = Mathf.Lerp(this.minScale, this.maxScale, Mathf.Abs(this.direction));
+        this.visualIndicator.transform.localScale = new Vector3(    currentScale,
+                                                                    currentScale,
+                                                                    this.visualIndicator.transform.localScale.z);
     }
 }
