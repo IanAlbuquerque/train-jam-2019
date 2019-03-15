@@ -21,6 +21,9 @@ public class SceneMover : MonoBehaviour
     [SerializeField]
     private Button returnToMainMenuButton;
 
+    [SerializeField]
+    public Animator pauseAnim;
+
     public string dogFightMainGame = "BrawlScene";
 
     public string creditsScene = "Credits";
@@ -31,7 +34,19 @@ public class SceneMover : MonoBehaviour
 
     public SceneFader sceneFader;
 
-    
+
+    void Start()
+    {
+        pauseAnim.SetBool("isPause", false);
+    }
+
+    public void Update()
+    {
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            pauseAnim.SetBool("isPaused", true);
+        }
+    }
 
     public void LoadMainScene()
     {
