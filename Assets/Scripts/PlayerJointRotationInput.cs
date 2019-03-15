@@ -23,6 +23,9 @@ public class PlayerJointRotationInput : MonoBehaviour
     private float maxScale = 2.0f;
 
     [SerializeField]
+    private bool invertAxis = false;
+
+    [SerializeField]
     private GameObject visualIndicator;
 
     // Start is called before the first frame update
@@ -35,7 +38,7 @@ public class PlayerJointRotationInput : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(this.key)) {
-            this.targetRigidBody.AddTorque(this.direction * this.maxIntensity);
+            this.targetRigidBody.AddTorque(this.direction * this.maxIntensity * (this.invertAxis?-1.0f:1.0f));
         }
         float currentScale = Mathf.Lerp(this.minScale, this.maxScale, Mathf.Abs(this.direction));
         this.visualIndicator.transform.localScale = new Vector3(    currentScale,
