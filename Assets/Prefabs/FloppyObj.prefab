@@ -1258,7 +1258,7 @@ MonoBehaviour:
   key: 97
   targetRigidBody: {fileID: 4843987605362603772}
   minIntensity: 5000
-  maxIntensity: 12000
+  maxIntensity: 15000
   timingManageScript: {fileID: 0}
   invertAxis: 1
   timeAbs: 1
