@@ -91,16 +91,9 @@ public class RoundAndSpawnManager : MonoBehaviour
     {
         //round start player reset
         ResetPlayers();
-        //DisablePlayerControl();
-
-        // Snap the camera's zoom and position to something appropriate for the reset tanks.
-        //camControl.SetStartPositionAndSize();
-
-        // Increment the round number and display text showing the players what round it is.
         roundNumber++;
         messageText.text = "ROUND " + roundNumber;
 
-        // Wait for the specified length of time until yielding control back to the game loop.
         yield return startWait;
     }
 
@@ -172,7 +165,10 @@ public class RoundAndSpawnManager : MonoBehaviour
         string message = "DRORGI!\n(Draw + Corgi)";
 
         if (roundWinner != null)
+        {
             message = roundWinner.gertrudeOrJerryColor + " IS THE PAWRENT";
+            Instantiate(roundHasEndedParticles, playerPrefab.transform);
+        }
 
         message += "\n\n\n\n";
 
@@ -182,7 +178,10 @@ public class RoundAndSpawnManager : MonoBehaviour
         }
 
         if (gameWinner != null)
+        {
             message = gameWinner.gertrudeOrJerryColor + " ADOPTS THE DOG!";
+            Instantiate(gameHasEndedParticles, messageText.transform);
+        }
 
         return message;
     }
