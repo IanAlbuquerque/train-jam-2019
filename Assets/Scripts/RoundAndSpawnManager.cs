@@ -25,37 +25,33 @@ public class RoundAndSpawnManager : MonoBehaviour
     public string winScene = "WinOrLoseScreen";
     public string mainMenuScene = "MainMenu";
 
-    private int roundNumber;                  // Which round the game is currently on.
-    private WaitForSeconds startWait;         // Used to have a delay whilst the round starts.
-    private WaitForSeconds endWait;           // Used to have a delay whilst the round or game ends.
-    private PlayerManager roundWinner;          // Reference to the winner of the current round.  Used to make an announcement of who won.
-    private PlayerManager gameWinner;           // Reference to the winner of the game.  Used to make an announcement of who won.
+    private int roundNumber;                  
+    private WaitForSeconds startWait;         
+    private WaitForSeconds endWait;
+    private PlayerManager roundWinner;  
+    private PlayerManager gameWinner;  
 
 
     private void Start()
     {
-        // Create the delays so they only have to be made once.
+        // Create the delays
         startWait = new WaitForSeconds(roundStartDelay);
         endWait = new WaitForSeconds(roundEndDelay);
 
         SpawnPlayers();
         SetCameraTargets();
 
-        // Once the tanks have been created and the camera is using them as targets, start the game.
         StartCoroutine(GameLoop());
     }
 
 
     private void SpawnPlayers()
     {
-        // For all the tanks...
         for (int i = 0; i < playerArray.Length; i++)
         {
-            // ... create them, set their player number and references needed for control.
             playerArray[i].instanceOfPlayer =
                 Instantiate(playerPrefab, playerArray[i].spawnPoint.position, playerArray[i].spawnPoint.rotation) as GameObject;
             playerArray[i].playerNumber = i + 1;
-            //playerArray[i].Setup();
         }
     }
 
