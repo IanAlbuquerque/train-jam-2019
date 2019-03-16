@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 public class CameraController : MonoBehaviour
 {
@@ -24,4 +25,6 @@ public class CameraController : MonoBehaviour
 
         transform.LookAt(player1Target);
     }
+
+    //CameraShaker.Instance.ShakeOnce(4f, 3f, .1f, 1.5f);
 }
