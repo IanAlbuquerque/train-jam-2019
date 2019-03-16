@@ -127,66 +127,42 @@ public class RoundAndSpawnManager : MonoBehaviour
         if (roundWinner != null)
             roundWinner.numberOfWins++;
 
-        // Now the winner's score has been incremented, see if someone has one the game.
         gameWinner = GetGameWinner();
 
-        // Get a message based on the scores and whether or not there is a game winner and display it.
         string message = EndMessage();
         messageText.text = message;
-
-        // Wait for the specified length of time until yielding control back to the game loop.
         yield return endWait;
     }
 
-
-    // This is used to check if there is one or fewer tanks remaining and thus the round should end.
     private bool OnePlayerLeft()
     {
-        // Start the count of tanks left at zero.
         int numTanksLeft = 0;
 
-        // Go through all the tanks...
         for (int i = 0; i < playerArray.Length; i++)
         {
-            // ... and if they are active, increment the counter.
             if (playerArray[i].instanceOfPlayer.activeSelf)
                 numTanksLeft++;
         }
-
-        // If there are one or fewer tanks remaining return true, otherwise return false.
         return numTanksLeft <= 1;
     }
 
-
-    // This function is to find out if there is a winner of the round.
-    // This function is called with the assumption that 1 or fewer tanks are currently active.
     private PlayerManager GetRoundWinner()
     {
-        // Go through all the tanks...
         for (int i = 0; i < playerArray.Length; i++)
         {
-            // ... and if one of them is active, it is the winner so return it.
             if (playerArray[i].instanceOfPlayer.activeSelf)
                 return playerArray[i];
         }
-
-        // If none of the tanks are active it is a draw so return null.
         return null;
     }
 
-
-    // This function is to find out if there is a winner of the game.
     private PlayerManager GetGameWinner()
     {
-        // Go through all the tanks...
         for (int i = 0; i < playerArray.Length; i++)
         {
-            // ... and if one of them has enough rounds to win the game, return it.
             if (playerArray[i].numberOfWins == numRoundsToWin)
                 return playerArray[i];
         }
-
-        // If no tanks have enough rounds to win, return null.
         return null;
     }
 
@@ -196,7 +172,7 @@ public class RoundAndSpawnManager : MonoBehaviour
         string message = "DRORGI!\n(Draw + Corgi)";
 
         if (roundWinner != null)
-            message = roundWinner.gertrudeOrJerryColor + " WINS DOG LOVE!";
+            message = roundWinner.gertrudeOrJerryColor + " IS THE PAWRENT";
 
         message += "\n\n\n\n";
 
