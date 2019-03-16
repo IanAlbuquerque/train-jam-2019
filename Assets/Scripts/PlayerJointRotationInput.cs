@@ -11,22 +11,19 @@ public class PlayerJointRotationInput : MonoBehaviour
     private Rigidbody2D targetRigidBody;
 
     [SerializeField]
+    private float minIntensity;
+
+    [SerializeField]
     private float maxIntensity;
 
     [SerializeField]
-    private float direction = 1.0f;
-
-    [SerializeField]
-    private float minScale = 1.0f;
-
-    [SerializeField]
-    private float maxScale = 2.0f;
+    private TimingManagerScript timingManageScript;
 
     [SerializeField]
     private bool invertAxis = false;
 
     [SerializeField]
-    private GameObject visualIndicator;
+    private bool timeAbs = false;
 
     // Start is called before the first frame update
     void Start()
@@ -37,12 +34,9 @@ public class PlayerJointRotationInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float time = this.timeAbs?this.timingManageScript.getTimeAbs():this.timingManageScript.getTime();
         if(Input.GetKeyDown(this.key)) {
-            this.targetRigidBody.AddTorque(this.direction * this.maxIntensity * (this.invertAxis?-1.0f:1.0f));
+            this.targetRigidBody.AddTorque(Mathf.Lerp(this.minIntensity, this.maxIntensity, Mathf.Abs(time)) * Mathf.Sign(time) * (this.invertAxis?-1.0f:1.0f));
         }
-        float currentScale = Mathf.Lerp(this.minScale, this.maxScale, Mathf.Abs(this.direction));
-        this.visualIndicator.transform.localScale = new Vector3(    currentScale,
-                                                                    currentScale,
-                                                                    this.visualIndicator.transform.localScale.z);
     }
 }

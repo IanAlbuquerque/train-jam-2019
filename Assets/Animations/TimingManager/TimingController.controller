@@ -6,7 +6,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: JointDirectionVariationPositiveNegative
+  m_Name: TimingController
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
@@ -51,7 +51,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: JointDirectionLoop
+  m_Name: TimingAnimationState
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -65,7 +65,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 46d79cd259812e944a5763e8fd01178d, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3036565173e0828488edb30d384e7adc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
