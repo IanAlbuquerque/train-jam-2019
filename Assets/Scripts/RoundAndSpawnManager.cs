@@ -20,6 +20,13 @@ public class RoundAndSpawnManager : MonoBehaviour
     [SerializeField]
     public GameObject gameHasEndedParticles;
 
+    [SerializeField]
+    public Animator pauseAnim;
+    public static bool gameIsPaused = false;
+
+    public GameObject pauseMenuUI;
+
+
     public SceneFader sceneFader;
 
     public string winScene = "WinOrLoseScreen";
@@ -34,6 +41,8 @@ public class RoundAndSpawnManager : MonoBehaviour
 
     private void Start()
     {
+        pauseAnim.SetBool("isPaused", false);
+
         // Create the delays
         startWait = new WaitForSeconds(roundStartDelay);
         endWait = new WaitForSeconds(roundEndDelay);
@@ -43,6 +52,42 @@ public class RoundAndSpawnManager : MonoBehaviour
 
         StartCoroutine(GameLoop());
     }
+
+    //void Update()
+    //{
+        
+    //    if (Input.GetKeyDown(KeyCode.Escape))
+    //    {
+    //        //Set the pause menu UI active
+    //        if (gameIsPaused)
+    //        {
+    //            Resume();
+    //        }
+    //        else
+    //        {
+    //            Pause();
+    //        }
+    //    }
+
+    //}
+    //public void Resume()
+    //{
+    //    pauseAnim.SetBool("isPaused", false);
+    //    Time.timeScale = 1f;
+    //    gameIsPaused = false;
+    //}
+
+    //public void Pause()
+    //{
+    //    pauseAnim.SetBool("isPaused", true);
+    //    gameIsPaused = true;
+    //}
+
+    //public void LoadMenu()
+    //{
+    //    Time.timeScale = 1f;
+    //    SceneManager.LoadScene("Title");
+    //}
 
 
     private void SpawnPlayers()

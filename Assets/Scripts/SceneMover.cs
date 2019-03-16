@@ -35,18 +35,18 @@ public class SceneMover : MonoBehaviour
     public SceneFader sceneFader;
 
 
-    void Start()
-    {
-        pauseAnim.SetBool("isPause", false);
-    }
+    //void Start()
+    //{
+    //    pauseAnim.SetBool("isPause", false);
+    //}
 
-    public void Update()
-    {
-        if(Input.GetKey(KeyCode.Escape))
-        {
-            pauseAnim.SetBool("isPaused", true);
-        }
-    }
+    //public void Update()
+    //{
+    //    if(Input.GetKey(KeyCode.Escape))
+    //    {
+    //        pauseAnim.SetBool("isPaused", true);
+    //    }
+    //}
 
     public void LoadMainScene()
     {
