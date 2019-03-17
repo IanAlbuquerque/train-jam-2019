@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - TriggerPlayer1
+  - TriggerPlayer2
   layers:
   - Default
   - TransparentFX

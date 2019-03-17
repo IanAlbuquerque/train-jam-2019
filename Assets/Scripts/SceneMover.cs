@@ -40,13 +40,16 @@ public class SceneMover : MonoBehaviour
     //    pauseAnim.SetBool("isPause", false);
     //}
 
-    //public void Update()
-    //{
-    //    if(Input.GetKey(KeyCode.Escape))
-    //    {
-    //        pauseAnim.SetBool("isPaused", true);
-    //    }
-    //}
+    public void Update()
+    {
+       if(Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Escape))
+       {
+           this.LoadMainScene();
+       }
+       if(Input.GetKeyDown(KeyCode.Escape)) {
+           this.QuitGame();
+       }
+    }
 
     public void LoadMainScene()
     {

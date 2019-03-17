@@ -9,10 +9,15 @@ public class RoundAndSpawnManager : MonoBehaviour
     public int numRoundsToWin = 3;            
     public float roundStartDelay = 3f;
     public float roundEndDelay = 3f;
-    public CameraController camControl;
+    // public CameraController camControl;
     public Text messageText;
-    public GameObject playerPrefab; 
-    public PlayerManager[] playerArray;
+    public GameObject player1Prefab; 
+    public GameObject player2Prefab;
+
+    public PlayerManager player1Manager;
+    public PlayerManager player2Manager;
+
+    public TimingManagerScript timingManagerScript;
 
     [SerializeField]
     public GameObject roundHasEndedParticles;
@@ -36,207 +41,180 @@ public class RoundAndSpawnManager : MonoBehaviour
     private WaitForSeconds startWait;         
     private WaitForSeconds endWait;
     private PlayerManager roundWinner;  
-    private PlayerManager gameWinner;  
+    private PlayerManager gameWinner; 
+
+    public Text player1ScoreText;
+    public Text player2ScoreText; 
 
 
     private void Start()
     {
-        pauseAnim.SetBool("isPaused", false);
-
         // Create the delays
-        startWait = new WaitForSeconds(roundStartDelay);
-        endWait = new WaitForSeconds(roundEndDelay);
+        this.startWait = new WaitForSeconds(this.roundStartDelay);
+        this.endWait = new WaitForSeconds(this.roundEndDelay);
 
         SpawnPlayers();
-        SetCameraTargets();
+        // SetCameraTargets();
 
         StartCoroutine(GameLoop());
     }
 
-    //void Update()
-    //{
-        
-    //    if (Input.GetKeyDown(KeyCode.Escape))
-    //    {
-    //        //Set the pause menu UI active
-    //        if (gameIsPaused)
-    //        {
-    //            Resume();
-    //        }
-    //        else
-    //        {
-    //            Pause();
-    //        }
-    //    }
-
-    //}
-    //public void Resume()
-    //{
-    //    pauseAnim.SetBool("isPaused", false);
-    //    Time.timeScale = 1f;
-    //    gameIsPaused = false;
-    //}
-
-    //public void Pause()
-    //{
-    //    pauseAnim.SetBool("isPaused", true);
-    //    gameIsPaused = true;
-    //}
-
-    //public void LoadMenu()
-    //{
-    //    Time.timeScale = 1f;
-    //    SceneManager.LoadScene("Title");
-    //}
-
+    private void Update() {
+        this.player1ScoreText.text = this.player1Manager.numberOfWins.ToString();
+        this.player2ScoreText.text = this.player2Manager.numberOfWins.ToString();
+    }
 
     private void SpawnPlayers()
     {
-        for (int i = 0; i < playerArray.Length; i++)
-        {
-            playerArray[i].instanceOfPlayer =
-                Instantiate(playerPrefab, playerArray[i].spawnPoint.position, playerArray[i].spawnPoint.rotation) as GameObject;
-            playerArray[i].playerNumber = i + 1;
-        }
+        this.player1Manager.instanceOfPlayer = Instantiate(this.player1Prefab, this.player1Manager.spawnPoint.position, this.player1Manager.spawnPoint.rotation) as GameObject;
+        this.player1Manager.instanceOfPlayer.GetComponent<PlayerSetter>().init(this.timingManagerScript);
+        this.player2Manager.instanceOfPlayer = Instantiate(this.player2Prefab, this.player2Manager.spawnPoint.position, this.player2Manager.spawnPoint.rotation) as GameObject;
+        this.player2Manager.instanceOfPlayer.GetComponent<PlayerSetter>().init(this.timingManagerScript);
+    }
+
+    private void DespawnPlayers() {
+        GameObject.Destroy(this.player1Manager.instanceOfPlayer);
+        GameObject.Destroy(this.player2Manager.instanceOfPlayer);
     }
 
 
-    private void SetCameraTargets()
-    {
-        Transform[] targets = new Transform[playerArray.Length];
+    // private void SetCameraTargets()
+    // {
+    //     Transform[] targets = new Transform[playerArray.Length];
 
-        for (int i = 0; i < targets.Length; i++)
-        {
-            targets[i] = playerArray[i].instanceOfPlayer.transform;
-        }
+    //     for (int i = 0; i < targets.Length; i++)
+    //     {
+    //         targets[i] = playerArray[i].instanceOfPlayer.transform;
+    //     }
 
-    }
+    // }
 
     private IEnumerator GameLoop()
     {
-        yield return StartCoroutine(RoundStarting());
+        // yield return StartCoroutine(RoundStarting());
 
-        yield return StartCoroutine(RoundPlaying());
+        // yield return StartCoroutine(RoundPlaying());
 
-        yield return StartCoroutine(RoundEnding());
+        // yield return StartCoroutine(RoundEnding());
         
-        if (gameWinner != null)
-        {
-            // If there is a game winner, restart level
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-        else
-        {
-            StartCoroutine(GameLoop());
-        }
+        // if (gameWinner != null)
+        // {
+        //     // If there is a game winner, restart level
+        //     this.sceneFader.FadeTo(this.winScene);
+        // }
+        // else
+        // {
+        //     StartCoroutine(GameLoop());
+        // }
+
+        yield return null;
     }
 
 
-    private IEnumerator RoundStarting()
-    {
-        //round start player reset
-        ResetPlayers();
-        roundNumber++;
-        messageText.text = "ROUND " + roundNumber;
+    // private IEnumerator RoundStarting()
+    // {
+    //     //round start player reset
+    //     ResetPlayers();
+    //     roundNumber++;
+    //     messageText.text = "ROUND " + roundNumber;
 
-        yield return startWait;
-    }
+    //     yield return startWait;
+    // }
 
 
-    private IEnumerator RoundPlaying()
-    {
-        // Clear the text 
-        messageText.text = string.Empty;
+    // private IEnumerator RoundPlaying()
+    // {
+    //     // Clear the text 
+    //     messageText.text = string.Empty;
    
-        while (!OnePlayerLeft())
-        {
-            yield return null;
-        }
+    //     while (!OnePlayerLeft())
+    //     {
+    //         yield return null;
+    //     }
+    // }
+
+
+    // private IEnumerator RoundEnding()
+    // {
+    //     // Clear the winner from previous round
+    //     roundWinner = null;
+
+    //     roundWinner = GetRoundWinner();
+
+    //     if (roundWinner != null)
+    //         roundWinner.numberOfWins++;
+
+    //     gameWinner = GetGameWinner();
+
+    //     string message = EndMessage();
+    //     messageText.text = message;
+    //     yield return endWait;
+    // }
+
+    // private PlayerManager GetRoundWinner()
+    // {
+    //     for (int i = 0; i < playerArray.Length; i++)
+    //     {
+    //         if (playerArray[i].instanceOfPlayer.activeSelf)
+    //             return playerArray[i];
+    //     }
+    //     return null;
+    // }
+
+    // private PlayerManager GetGameWinner()
+    // {
+    //     for (int i = 0; i < playerArray.Length; i++)
+    //     {
+    //         if (playerArray[i].numberOfWins == numRoundsToWin)
+    //             return playerArray[i];
+    //     }
+    //     return null;
+    // }
+
+
+    // private string EndMessage()
+    // {
+    //     string message = "DRORGI!\n(Draw + Corgi)";
+
+    //     if (roundWinner != null)
+    //     {
+    //         message = roundWinner.gertrudeOrJerryColor + " IS THE PAWRENT";
+    //         Instantiate(roundHasEndedParticles, playerPrefab.transform);
+    //     }
+
+    //     message += "\n\n\n\n";
+
+    //     for (int i = 0; i < playerArray.Length; i++)
+    //     {
+    //         message += playerArray[i].gertrudeOrJerryColor + ": " + playerArray[i].numberOfWins + " ";
+    //     }
+
+    //     if (gameWinner != null)
+    //     {
+    //         message = gameWinner.gertrudeOrJerryColor + " ADOPTS THE DOG!";
+    //         Instantiate(gameHasEndedParticles, messageText.transform);
+    //     }
+
+    //     return message;
+    // }
+
+    private void triggerPlayerOverallVictory(int playerNumber) {
+        this.sceneFader.FadeTo(this.winScene);
     }
 
-
-    private IEnumerator RoundEnding()
-    {
-        // Clear the winner from previous round
-        roundWinner = null;
-
-        roundWinner = GetRoundWinner();
-
-        if (roundWinner != null)
-            roundWinner.numberOfWins++;
-
-        gameWinner = GetGameWinner();
-
-        string message = EndMessage();
-        messageText.text = message;
-        yield return endWait;
-    }
-
-    private bool OnePlayerLeft()
-    {
-        int numTanksLeft = 0;
-
-        for (int i = 0; i < playerArray.Length; i++)
-        {
-            if (playerArray[i].instanceOfPlayer.activeSelf)
-                numTanksLeft++;
+    public void triggerPlayerRoundVictory(int playerNumber) {
+        Debug.Log(playerNumber.ToString() + " won round!");
+        if(playerNumber == 1) {
+            this.player1Manager.numberOfWins += 1;
+        } else {
+            this.player2Manager.numberOfWins += 1;
         }
-        return numTanksLeft <= 1;
-    }
-
-    private PlayerManager GetRoundWinner()
-    {
-        for (int i = 0; i < playerArray.Length; i++)
-        {
-            if (playerArray[i].instanceOfPlayer.activeSelf)
-                return playerArray[i];
-        }
-        return null;
-    }
-
-    private PlayerManager GetGameWinner()
-    {
-        for (int i = 0; i < playerArray.Length; i++)
-        {
-            if (playerArray[i].numberOfWins == numRoundsToWin)
-                return playerArray[i];
-        }
-        return null;
-    }
-
-
-    private string EndMessage()
-    {
-        string message = "DRORGI!\n(Draw + Corgi)";
-
-        if (roundWinner != null)
-        {
-            message = roundWinner.gertrudeOrJerryColor + " IS THE PAWRENT";
-            Instantiate(roundHasEndedParticles, playerPrefab.transform);
-        }
-
-        message += "\n\n\n\n";
-
-        for (int i = 0; i < playerArray.Length; i++)
-        {
-            message += playerArray[i].gertrudeOrJerryColor + ": " + playerArray[i].numberOfWins + " ";
-        }
-
-        if (gameWinner != null)
-        {
-            message = gameWinner.gertrudeOrJerryColor + " ADOPTS THE DOG!";
-            Instantiate(gameHasEndedParticles, messageText.transform);
-        }
-
-        return message;
-    }
-
-    // Reset at their spawn points
-    private void ResetPlayers()
-    {
-        for (int i = 0; i < playerArray.Length; i++)
-        {
-            playerArray[i].Reset();
+        this.DespawnPlayers();
+        this.SpawnPlayers();
+        if(this.player1Manager.numberOfWins >= this.numRoundsToWin) {
+            this.triggerPlayerOverallVictory(1);
+        } else if(this.player2Manager.numberOfWins >= this.numRoundsToWin) {
+            this.triggerPlayerOverallVictory(2);
         }
     }
 }

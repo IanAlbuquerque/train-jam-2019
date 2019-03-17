@@ -11,6 +11,9 @@ public class PlayerJointRotationInput : MonoBehaviour
     private Rigidbody2D targetRigidBody;
 
     [SerializeField]
+    private Rigidbody2D mainBodyRigidBody;
+
+    [SerializeField]
     private float minIntensity;
 
     [SerializeField]
@@ -25,6 +28,13 @@ public class PlayerJointRotationInput : MonoBehaviour
     [SerializeField]
     private bool timeAbs = false;
 
+    [SerializeField]
+    private Vector3 artificialBoost;
+
+    public void init(TimingManagerScript script) {
+        this.timingManageScript = script;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +47,7 @@ public class PlayerJointRotationInput : MonoBehaviour
         float time = this.timeAbs?this.timingManageScript.getTimeAbs():this.timingManageScript.getTime();
         if(Input.GetKeyDown(this.key)) {
             this.targetRigidBody.AddTorque(Mathf.Lerp(this.minIntensity, this.maxIntensity, Mathf.Abs(time)) * Mathf.Sign(time) * (this.invertAxis?-1.0f:1.0f));
+            this.mainBodyRigidBody.AddForce(this.artificialBoost, ForceMode2D.Impulse);
         }
     }
 }

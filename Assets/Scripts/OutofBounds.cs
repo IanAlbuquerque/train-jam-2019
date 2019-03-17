@@ -5,25 +5,18 @@ using UnityEngine.UI;
 
 public class OutofBounds : MonoBehaviour
 {
-    [SerializeField]
-    private Text collisionDetectText;
+    public string tagString;
 
-    [SerializeField]
-    private string displayText;
+    public int victoriousPlayerNumber;
 
-    [SerializeField]
-    GameObject rightCollider;
-
-    [SerializeField]
-    GameObject leftCollider;
-
-    [SerializeField]
-    Rigidbody2D playerRigidbody;
+    public RoundAndSpawnManager roundAndSpawnManager;
 
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         //if(collision.gameObject.tag)
-        collisionDetectText.text = "" + displayText + " collider hit!";
+        if(collision.gameObject.CompareTag(this.tagString)) {
+            this.roundAndSpawnManager.triggerPlayerRoundVictory(this.victoriousPlayerNumber);
+        }
     }
 }

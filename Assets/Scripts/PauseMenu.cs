@@ -9,11 +9,9 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
-    public Animator pauseAnim;
-
     public void Start()
     {
-        pauseAnim.SetBool("isPaused", false);
+        this.pauseMenuUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -35,21 +33,16 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-        pauseAnim.SetBool("isPaused", false);
+        this.pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
     }
 
     public void Pause()
     {
-        pauseAnim.SetBool("isPaused", true);
+        this.pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
         gameIsPaused = true;
-    }
-
-    public void LoadMenu()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Title");
     }
 
     public void QuitGame()
