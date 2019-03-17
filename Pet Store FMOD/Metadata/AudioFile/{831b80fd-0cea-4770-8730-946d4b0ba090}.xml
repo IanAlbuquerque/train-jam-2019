@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{831b80fd-0cea-4770-8730-946d4b0ba090}">
+        <property name="assetPath">
+            <value>sfx_impact_heavy_04.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.40000000000000002</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{e37e5ea8-8dee-4baa-8013-474e7de9fdbe}</destination>
+        </relationship>
+    </object>
+</objects>

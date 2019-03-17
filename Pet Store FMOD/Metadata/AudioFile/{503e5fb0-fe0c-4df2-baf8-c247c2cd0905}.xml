@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{503e5fb0-fe0c-4df2-baf8-c247c2cd0905}">
+        <property name="assetPath">
+            <value>CorgiBarkSingle2.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.3719954648526077</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{e37e5ea8-8dee-4baa-8013-474e7de9fdbe}</destination>
+        </relationship>
+    </object>
+</objects>

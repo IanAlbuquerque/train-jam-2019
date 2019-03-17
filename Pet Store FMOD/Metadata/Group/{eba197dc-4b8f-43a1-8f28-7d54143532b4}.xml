@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MixerGroup" id="{eba197dc-4b8f-43a1-8f28-7d54143532b4}">
+        <property name="name">
+            <value>Gertrude</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{3be9191e-fadf-478b-bc2c-81589c4e4150}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{2a8a8514-2e03-4b10-919c-718f567c99b0}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{3e5ab06a-ee72-42db-a482-ff18285ffc96}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{3be9191e-fadf-478b-bc2c-81589c4e4150}">
+        <relationship name="effects">
+            <destination>{95d010b3-6caa-4d16-828b-d6265c517ddc}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{2a8a8514-2e03-4b10-919c-718f567c99b0}"/>
+    <object class="MixerBusFader" id="{95d010b3-6caa-4d16-828b-d6265c517ddc}"/>
+</objects>

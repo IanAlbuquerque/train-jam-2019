@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{636ebb90-0ab8-402e-9678-97d19c6bd9c3}">
+        <property name="assetPath">
+            <value>sfx_dogman_bark_03.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.0904583333333333</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{e37e5ea8-8dee-4baa-8013-474e7de9fdbe}</destination>
+        </relationship>
+    </object>
+</objects>

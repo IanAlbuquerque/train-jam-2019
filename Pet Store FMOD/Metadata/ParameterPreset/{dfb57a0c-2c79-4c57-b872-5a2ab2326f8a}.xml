@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{dfb57a0c-2c79-4c57-b872-5a2ab2326f8a}">
+        <property name="name">
+            <value>Corgi Chosen</value>
+        </property>
+        <relationship name="folder">
+            <destination>{79f9f96a-d106-4416-9735-c0f733bd932b}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{504d2235-afb6-4e31-84f5-2e90d7ff8779}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{504d2235-afb6-4e31-84f5-2e90d7ff8779}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{7a7f7587-82e5-4238-a242-6fdb8c77fddb}">
+        <property name="assetPath">
+            <value>vo_cp_exert_06.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.28387499999999999</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{e37e5ea8-8dee-4baa-8013-474e7de9fdbe}</destination>
+        </relationship>
+    </object>
+</objects>

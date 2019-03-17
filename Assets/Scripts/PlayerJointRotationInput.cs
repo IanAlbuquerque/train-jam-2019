@@ -31,8 +31,12 @@ public class PlayerJointRotationInput : MonoBehaviour
     [SerializeField]
     private Vector3 artificialBoost;
 
-    public void init(TimingManagerScript script) {
+    [SerializeField]    
+    private RoundAndSpawnManager roundAndSpawnManager;
+
+    public void init(TimingManagerScript script, RoundAndSpawnManager roundAndSpawnManager) {
         this.timingManageScript = script;
+        this.roundAndSpawnManager = roundAndSpawnManager;
     }
 
     // Start is called before the first frame update
@@ -44,10 +48,12 @@ public class PlayerJointRotationInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float time = this.timeAbs?this.timingManageScript.getTimeAbs():this.timingManageScript.getTime();
-        if(Input.GetKeyDown(this.key)) {
-            this.targetRigidBody.AddTorque(Mathf.Lerp(this.minIntensity, this.maxIntensity, Mathf.Abs(time)) * Mathf.Sign(time) * (this.invertAxis?-1.0f:1.0f));
-            this.mainBodyRigidBody.AddForce(this.artificialBoost, ForceMode2D.Impulse);
+        if(this.roundAndSpawnManager.canControlCharacters) {
+            float time = this.timeAbs?this.timingManageScript.getTimeAbs():this.timingManageScript.getTime();
+            if(Input.GetKeyDown(this.key)) {
+                this.targetRigidBody.AddTorque(Mathf.Lerp(this.minIntensity, this.maxIntensity, Mathf.Abs(time)) * Mathf.Sign(time) * (this.invertAxis?-1.0f:1.0f));
+                this.mainBodyRigidBody.AddForce(this.artificialBoost, ForceMode2D.Impulse);
+            }
         }
     }
 }

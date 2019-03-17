@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{353c5071-7b5b-414e-83b6-b331c0307994}">
+        <property name="name">
+            <value>Big Dog Chosen</value>
+        </property>
+        <relationship name="folder">
+            <destination>{79f9f96a-d106-4416-9735-c0f733bd932b}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{48b5bff0-af47-4da7-9a80-8ddd38661d5d}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{48b5bff0-af47-4da7-9a80-8ddd38661d5d}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

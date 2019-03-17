@@ -6,9 +6,9 @@ public class PlayerSetter : MonoBehaviour
 {
     public List<PlayerJointRotationInput> scripts;
 
-    public void init(TimingManagerScript timingManagerScript) {
+    public void init(TimingManagerScript timingManagerScript, RoundAndSpawnManager roundAndSpawnManager) {
         foreach(PlayerJointRotationInput script in this.scripts) {
-            script.init(timingManagerScript);
+            script.init(timingManagerScript, roundAndSpawnManager);
         }
     }
 

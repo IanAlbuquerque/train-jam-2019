@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{923a1b10-cc66-4647-b42a-68a1255144e1}">
+        <property name="name">
+            <value>Dog Man Chosen</value>
+        </property>
+        <relationship name="folder">
+            <destination>{79f9f96a-d106-4416-9735-c0f733bd932b}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{997498b8-ca8e-4707-845b-e7d9d4ae15ea}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{997498b8-ca8e-4707-845b-e7d9d4ae15ea}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
