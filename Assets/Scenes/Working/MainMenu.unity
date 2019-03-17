@@ -644,8 +644,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000002861, y: 68}
-  m_SizeDelta: {x: 642.4, y: 194.2}
+  m_AnchoredPosition: {x: 7, y: -332.9}
+  m_SizeDelta: {x: 727.4, y: 1959.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &619532206
 MonoBehaviour:
@@ -680,31 +680,41 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'AAAAAA AAAAAAA - XXXXXXXX XXXXXXX
+  m_Text: '<b>Design & Programming</b>
 
-    AAAAAA AAAAAAA - XXXXXXXX XXXXXXX
+    <b>---------------------</b>
 
-    AAAAAA AAAAAAA - XXXXXXXX XXXXXXX
+    Parker Hamilton
 
-    AAAAAA AAAAAAA - XXXXXXXX XXXXXXX
+    Ian Albuquerque
 
-    AAAAAA AAAAAAA - XXXXXXXX XXXXXXX
 
-    AAAAAA AAAAAAA - XXXXXXXX XXXXXXX
+    <b>Sound & Music</b>
 
-    AAAAAA AAAAAAA - XXXXXXXX XXXXXXX
+    <b>---------------------</b>
 
-    AAAAAA AAAAAAA - XXXXXXXX XXXXXXX
+    Crosby Nelson
 
-    AAAAAA AAAAAAA - XXXXXXXX XXXXXXX
+    Gwen Guo
 
-    AAAAAA AAAAAAA - XXXXXXXX XXXXXXX
+    Maize Wallin
 
-    AAAAAA AAAAAAA - XXXXXXXX XXXXXXX
+    Ali Cedroni
 
-    AAAAAA AAAAAAA - XXXXXXXX XXXXXXX
 
-    AAAAAA AAAAAAA - XXXXXXXX XXXXXXX'
+    <b>Art & Sprites</b>
+
+    <b>---------------------</b>
+
+    Claudia Jarmakowicz
+
+    Jude Zich
+
+    Amanda Wylie
+
+    Jacob Goldfarb
+
+    Bryan Cisneros'
 --- !u!222 &619532207
 CanvasRenderer:
   m_ObjectHideFlags: 0
