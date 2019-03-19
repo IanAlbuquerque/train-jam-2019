@@ -14,11 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: C:\Users\Crosby\Documents\_Train Jam\FMOD\Pet Store FMOD\Pet
-    Store FMOD.fspro
-  SourceProjectPathUnformatted: C:\Users\Crosby\Documents\_Train Jam\FMOD\Pet Store
-    FMOD\Pet Store FMOD.fspro
-  SourceBankPathUnformatted: C:\Users\Crosby\Documents\_Train Jam\FMOD\Pet Store FMOD\Build
+  sourceProjectPath: Pet Store FMOD\Pet Store FMOD.fspro
+  SourceProjectPathUnformatted: Pet Store FMOD\Pet Store FMOD.fspro
+  SourceBankPathUnformatted: Pet Store FMOD\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0

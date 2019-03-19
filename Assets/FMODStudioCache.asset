@@ -13,51 +13,74 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114260925458224732}
-  - {fileID: 114929885486056886}
+  - {fileID: 114325617228419896}
+  - {fileID: 114824040015296132}
   EditorEvents:
-  - {fileID: 114274048584071380}
-  - {fileID: 114854173691679662}
-  - {fileID: 114840107505868156}
-  - {fileID: 114531911611439276}
-  - {fileID: 114296976389843862}
-  - {fileID: 114921954425305352}
-  - {fileID: 114748500201890438}
-  - {fileID: 114977244826912586}
-  - {fileID: 114516093344916744}
-  - {fileID: 114933468147313878}
-  - {fileID: 114626297614455206}
-  - {fileID: 114455081970929286}
-  - {fileID: 114960069044436654}
-  - {fileID: 114410133276099924}
-  - {fileID: 114551143317969604}
-  - {fileID: 114546014229431770}
-  - {fileID: 114309001277248374}
-  - {fileID: 114669135723464324}
-  - {fileID: 114594141786872616}
-  - {fileID: 114343546420009008}
-  - {fileID: 114852172775252500}
-  - {fileID: 114522192914754238}
-  - {fileID: 114690679181368822}
-  - {fileID: 114671042900106854}
-  - {fileID: 114943940602673386}
-  - {fileID: 114388938448863904}
-  - {fileID: 114721677353453188}
-  - {fileID: 114880352746549578}
-  - {fileID: 114525941040774392}
-  - {fileID: 114765672655311874}
-  - {fileID: 114850910115922744}
-  - {fileID: 114011963403357216}
-  - {fileID: 114950582591104128}
-  - {fileID: 114946194752252828}
-  - {fileID: 114349689158544322}
-  - {fileID: 114814097298225606}
+  - {fileID: 114390666275485320}
+  - {fileID: 114002699577633478}
+  - {fileID: 114262606304929472}
+  - {fileID: 114195424735013186}
+  - {fileID: 114074355124214602}
+  - {fileID: 114931563458491580}
+  - {fileID: 114204100143277992}
+  - {fileID: 114503112598284990}
+  - {fileID: 114363981303309654}
+  - {fileID: 114655817451797490}
+  - {fileID: 114061777371653714}
+  - {fileID: 114561934559018468}
+  - {fileID: 114858955665326788}
+  - {fileID: 114789133838701168}
+  - {fileID: 114432209185778604}
+  - {fileID: 114917861137258294}
+  - {fileID: 114726417920714462}
+  - {fileID: 114793471232325912}
+  - {fileID: 114054689143992602}
+  - {fileID: 114680179903209322}
+  - {fileID: 114872687874608258}
+  - {fileID: 114964702309830654}
+  - {fileID: 114072723684060964}
+  - {fileID: 114531015649141818}
+  - {fileID: 114663396582384806}
+  - {fileID: 114803590559844202}
+  - {fileID: 114711178622722804}
+  - {fileID: 114490144760333732}
+  - {fileID: 114804827990399786}
+  - {fileID: 114871786666571510}
+  - {fileID: 114165987919677570}
+  - {fileID: 114638094981215454}
+  - {fileID: 114242915371054986}
+  - {fileID: 114400303767282796}
+  - {fileID: 114607329760716120}
+  - {fileID: 114084873041970532}
   MasterBanks:
-  - {fileID: 114929885486056886}
+  - {fileID: 114824040015296132}
   StringsBanks:
-  - {fileID: 114260925458224732}
-  stringsBankWriteTime: 636884766871436759
+  - {fileID: 114325617228419896}
+  stringsBankWriteTime: 636885328283336245
   cacheVersion: 3
+--- !u!114 &114002699577633478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UI Hover Over
+  guid: 0146edb3518efe49b601bdf5e6b25bc6
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 450
 --- !u!114 &114006284389567668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,6 +136,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114030895684691072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Dog Man Chosen
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114038378610183966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +200,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114054689143992602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Big Dog Select
+  guid: 64260dc7ed9d7b40bc48d251a5f37939
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1165
 --- !u!114 &114060683674966548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,6 +239,101 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114061777371653714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/BackToMainMenu
+  guid: 3ae24366a31bb34bbecf5e4c0ce8d0d2
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2050
+--- !u!114 &114072723684060964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Potentially Depracated/Dog Man Round Start
+  guid: 9fbc554010eb204aac19b1fea2e72807
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1090
+--- !u!114 &114074355124214602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Characters/Jerry Win
+  guid: 16355c93b4b2554eaeb12eb6422eae4e
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1600
+--- !u!114 &114084873041970532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Round/Round Begin Bell
+  guid: fc0428b6413ddf43bf82e3028dd69209
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 114694827609740566}
+  - {fileID: 114030895684691072}
+  - {fileID: 114562256195255026}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3763
 --- !u!114 &114107335308423520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,6 +414,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114165987919677570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Round/Knockout!
+  guid: e0dba7a57eebd44cada64b568089a60d
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1106
 --- !u!114 &114176746555712954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,6 +469,75 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114195424735013186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Round/Ring Out Bell
+  guid: 0fb5aba508984d409d5c01f5f9e04b06
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3461
+--- !u!114 &114204100143277992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Round 2 Announcer
+  guid: 1dee6b98efb810479fdfad017664cfec
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114242915371054986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UIDogBark
+  guid: e2e30ed6256a304b8f3e8adf5db98c01
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
 --- !u!114 &114245578498419488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,6 +574,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2750
   Exists: 1
+--- !u!114 &114262606304929472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Dog Man Select
+  guid: 05a1c580280f7e4cba2021bccca619d3
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 800
 --- !u!114 &114269735404378464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,6 +714,25 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114325617228419896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Pet Store FMOD\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636885328283336245
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2740
+  Exists: 1
 --- !u!114 &114329637555495464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,6 +835,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114363981303309654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Corgi Select
+  guid: 290cb942b1591b4c83ef32075fd323bd
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1181
 --- !u!114 &114388938448863904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,6 +881,52 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 68
+--- !u!114 &114390666275485320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Characters/Jerry Lose
+  guid: 000b6e4f58032a44bf2d6c8eaac15ca0
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1372
+--- !u!114 &114400303767282796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: snapshot:/RoundChange
+  guid: e65dcbd3416b9a469b09a5cd188c0cdc
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114410133276099924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,6 +1015,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114432209185778604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Potentially Depracated/Corgi Round Start
+  guid: 55c9783006022441bb0ce9c5849684fa
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 372
 --- !u!114 &114434773658061546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -758,6 +1141,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114490144760333732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Speech Bubbles
+  guid: bee272db138e7c48aabbdb625f43e7cb
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 68
 --- !u!114 &114490740494383738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,6 +1180,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114503112598284990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Characters/Jerry Pushed Back
+  guid: 20ab20cc9b729c46b124d8ef71b7d91a
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 420
 --- !u!114 &114516093344916744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -875,6 +1304,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114531015649141818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Characters/Getrude Pushed Back
+  guid: ab0ebd73f2969044a130772372c60cb2
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 700
 --- !u!114 &114531911611439276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,6 +1444,45 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114561934559018468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Round 3 Announcer
+  guid: 3c47e12dd3e38842abbd7f16c2a82c9c
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114562256195255026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Corgi Chosen
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114563723051415538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,6 +1500,22 @@ MonoBehaviour:
   Max: 1
   Default: 0
 --- !u!114 &114563892548765914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: IsPlayingGame
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114576266761353076
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1063,6 +1570,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2160
+--- !u!114 &114607329760716120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Characters/Gertrude Win
+  guid: f193285e3b8264418e1c57ead5251a75
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
 --- !u!114 &114612973343599074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,6 +1696,75 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114638094981215454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Game Start
+  guid: e1f0d4e51693a348935d375b79b22943
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2500
+--- !u!114 &114655817451797490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Potentially Depracated/Jerry Impacts
+  guid: 2f9e34bccd95334a9f687bc6a3320d47
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 300
+--- !u!114 &114663396582384806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Announcer/Round 1 Announcer
+  guid: ab994728bb300f45a32fc6f74d73090f
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114669135723464324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1189,6 +1788,22 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1165
+--- !u!114 &114670124415375338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: IsPlayingGame
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114671042900106854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1212,6 +1827,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1116
+--- !u!114 &114680179903209322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Potentially Depracated/Ring Out Whoosh
+  guid: 726235fe61ddaa45949c92295b6fff60
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2160
 --- !u!114 &114686501407059888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1251,6 +1889,22 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114694827609740566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Big Dog Chosen
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114697294472812998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1322,6 +1976,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114711178622722804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Round/Win Clap
+  guid: b9d4e163f37fe64dba5f7dcb8eb3e93a
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2891
 --- !u!114 &114721677353453188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1345,6 +2022,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 300
+--- !u!114 &114726417920714462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Characters/Jerry Effort
+  guid: 605062636c0fb5408e8fd40232bdac12
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 420
 --- !u!114 &114728147464286436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1439,6 +2139,54 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114789133838701168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music2
+  guid: 45b65e3ad4d33043bdaa9967963a0966
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114670124415375338}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8000
+--- !u!114 &114793471232325912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music
+  guid: 6158dfb094f5ca4f902258f28018d0eb
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114576266761353076}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 18500
 --- !u!114 &114794251093817882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1455,6 +2203,52 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114803590559844202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Characters/Gertrude Lose
+  guid: b03d6a470257b24c95b40fd61dd031ca
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1116
+--- !u!114 &114804827990399786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Potentially Depracated/Gertrude Impacts
+  guid: d1715dfd32b98b448166e900e4b437ce
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 300
 --- !u!114 &114814097298225606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1479,6 +2273,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 8000
+--- !u!114 &114824040015296132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\workspace\train-jam-2019\Pet Store FMOD\Build\Desktop\Master Bank.bank
+  lastModified: 636885328283106864
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 723872
+  Exists: 1
 --- !u!114 &114833178458146742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1587,6 +2400,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 450
+--- !u!114 &114858955665326788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Characters/Getrude Effort
+  guid: 3e137e9fb93cf4458a2bee128bef815c
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 450
 --- !u!114 &114861344495741416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1603,6 +2439,52 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114871786666571510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Impacts/Gertrude Punchs
+  guid: db535e0cd1a1704598cbfcbad47d03e9
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 260
+--- !u!114 &114872687874608258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Impacts/Jerry Kicks
+  guid: 8e08ef7bace8314991c23afb63d9a4fe
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 400
 --- !u!114 &114873775898693484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1674,6 +2556,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114917861137258294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Potentially Depracated/Big Dog Round Start
+  guid: 57768e0f24f89845b62cfbad9f419222
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 230
 --- !u!114 &114921954425305352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1733,6 +2638,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114931563458491580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Impacts/Jerry Punchs
+  guid: 1d37c3af402e704489af79e4e7a6543d
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 290
 --- !u!114 &114933468147313878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1848,6 +2776,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 450
+--- !u!114 &114964702309830654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Impacts/Gertrude Kicks
+  guid: 9e30fe6ca599e248a160c6a951c04262
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 400
 --- !u!114 &114977244826912586
 MonoBehaviour:
   m_ObjectHideFlags: 0
