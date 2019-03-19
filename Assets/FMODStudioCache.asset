@@ -23,7 +23,6 @@ MonoBehaviour:
   - {fileID: 114074355124214602}
   - {fileID: 114931563458491580}
   - {fileID: 114204100143277992}
-  - {fileID: 114503112598284990}
   - {fileID: 114363981303309654}
   - {fileID: 114655817451797490}
   - {fileID: 114061777371653714}
@@ -33,13 +32,10 @@ MonoBehaviour:
   - {fileID: 114432209185778604}
   - {fileID: 114917861137258294}
   - {fileID: 114726417920714462}
-  - {fileID: 114793471232325912}
   - {fileID: 114054689143992602}
-  - {fileID: 114680179903209322}
   - {fileID: 114872687874608258}
   - {fileID: 114964702309830654}
   - {fileID: 114072723684060964}
-  - {fileID: 114531015649141818}
   - {fileID: 114663396582384806}
   - {fileID: 114803590559844202}
   - {fileID: 114711178622722804}
@@ -52,11 +48,15 @@ MonoBehaviour:
   - {fileID: 114400303767282796}
   - {fileID: 114607329760716120}
   - {fileID: 114084873041970532}
+  - {fileID: 114797965675411462}
+  - {fileID: 114961245137623694}
+  - {fileID: 114470756376439334}
+  - {fileID: 114656237293367910}
   MasterBanks:
   - {fileID: 114824040015296132}
   StringsBanks:
   - {fileID: 114325617228419896}
-  stringsBankWriteTime: 636885328283336245
+  stringsBankWriteTime: 636884750120000000
   cacheVersion: 3
 --- !u!114 &114002699577633478
 MonoBehaviour:
@@ -327,13 +327,10 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters:
-  - {fileID: 114694827609740566}
-  - {fileID: 114030895684691072}
-  - {fileID: 114562256195255026}
+  Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 3763
+  Length: 8363
 --- !u!114 &114107335308423520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,11 +724,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Pet Store FMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636885328283336245
+  lastModified: 636884750120000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2740
+    Value: 2750
   Exists: 1
 --- !u!114 &114329637555495464
 MonoBehaviour:
@@ -927,6 +924,22 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114400459952403274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: IsPlayingGame
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114410133276099924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,6 +1122,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114470756376439334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Round/Ring Out Whoosh
+  guid: 726235fe61ddaa45949c92295b6fff60
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2160
 --- !u!114 &114476297426191734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1742,6 +1778,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 300
+--- !u!114 &114656237293367910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/BattleMusic
+  guid: cd918d6851d75146833514a63a1818fc
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114400459952403274}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8000
 --- !u!114 &114663396582384806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1998,7 +2058,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2891
+  Length: 3891
 --- !u!114 &114721677353453188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2139,6 +2199,38 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114783291306167498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: IsPlayingGame
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114783855033928102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: IsPlayingGame
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114789133838701168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2159,7 +2251,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114670124415375338}
+  - {fileID: 114783291306167498}
   MinDistance: 0
   MaxDistance: 0
   Length: 8000
@@ -2203,6 +2295,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114797965675411462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Characters/Footsteps
+  guid: 318f59f8abb7d346bafb546601a996a1
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 153
 --- !u!114 &114803590559844202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2286,11 +2401,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\workspace\train-jam-2019\Pet Store FMOD\Build\Desktop\Master Bank.bank
-  lastModified: 636885328283106864
+  lastModified: 636884750120000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 723872
+    Value: 800192
   Exists: 1
 --- !u!114 &114833178458146742
 MonoBehaviour:
@@ -2461,7 +2576,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 260
+  Length: 350
 --- !u!114 &114872687874608258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2484,7 +2599,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 400
+  Length: 500
 --- !u!114 &114873775898693484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2660,7 +2775,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 290
+  Length: 360
 --- !u!114 &114933468147313878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2776,6 +2891,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 450
+--- !u!114 &114961245137623694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MenuMusic
+  guid: 6158dfb094f5ca4f902258f28018d0eb
+  Banks:
+  - {fileID: 114824040015296132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114783855033928102}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8000
 --- !u!114 &114964702309830654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2798,7 +2937,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 400
+  Length: 500
 --- !u!114 &114977244826912586
 MonoBehaviour:
   m_ObjectHideFlags: 0
