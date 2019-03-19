@@ -52,6 +52,7 @@ MonoBehaviour:
   invertAxis: 1
   timeAbs: 1
   artificialBoost: {x: 0, y: 10, z: 0}
+  roundAndSpawnManager: {fileID: 0}
 --- !u!1 &45198802
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +103,7 @@ GameObject:
   - component: {fileID: 153398070}
   m_Layer: 8
   m_Name: LeftLowerLeg
-  m_TagString: Untagged
+  m_TagString: Gertrude
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -283,9 +284,10 @@ GameObject:
   - component: {fileID: 206033480}
   - component: {fileID: 206033479}
   - component: {fileID: 206033478}
+  - component: {fileID: 8398431670645854685}
   m_Layer: 8
   m_Name: LeftFoot
-  m_TagString: Untagged
+  m_TagString: Gertrude
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -433,6 +435,19 @@ SpringJoint2D:
   m_Distance: 0.005
   m_DampingRatio: 0
   m_Frequency: 1
+--- !u!114 &8398431670645854685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206033476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60376a6d6a23504d963b2fdf33886ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FootstepsPlay: event:/Characters/Footsteps
 --- !u!1 &445211227
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +465,7 @@ GameObject:
   - component: {fileID: 445211229}
   m_Layer: 8
   m_Name: LeftLeg
-  m_TagString: Untagged
+  m_TagString: Gertrude
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,9 +645,10 @@ GameObject:
   - component: {fileID: 471087510}
   - component: {fileID: 471087509}
   - component: {fileID: 471087508}
+  - component: {fileID: 7967002568316659245}
   m_Layer: 8
   m_Name: Hand
-  m_TagString: Untagged
+  m_TagString: Gertrude
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -760,6 +776,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0.6, y: 0.01}
   m_Size: {x: 1.22, y: 0.85}
   m_Direction: 1
+--- !u!114 &7967002568316659245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471087506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8013d030d240cd346b3bc0326a6d3950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactSoundEffect: event:/Impacts/Gertrude Punchs
+  GertrudeEffort: event:/Characters/Getrude Effort
 --- !u!1 &626419157
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,7 +806,7 @@ GameObject:
   - component: {fileID: 626419159}
   m_Layer: 8
   m_Name: Hand (1)
-  m_TagString: Untagged
+  m_TagString: Gertrude
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -940,7 +970,7 @@ GameObject:
   - component: {fileID: 627676679}
   m_Layer: 8
   m_Name: RightLowerLeg
-  m_TagString: Untagged
+  m_TagString: Gertrude
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1104,7 +1134,7 @@ GameObject:
   - component: {fileID: 633387515}
   m_Layer: 8
   m_Name: LeftForeArm
-  m_TagString: Untagged
+  m_TagString: Gertrude
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1249,7 +1279,7 @@ GameObject:
   - component: {fileID: 4438529775881123490}
   m_Layer: 8
   m_Name: GertrudePrefab
-  m_TagString: Untagged
+  m_TagString: Gertrude
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1416,7 +1446,7 @@ GameObject:
   - component: {fileID: 772162235}
   m_Layer: 8
   m_Name: UpperLeftArm
-  m_TagString: Untagged
+  m_TagString: Gertrude
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1616,9 +1646,10 @@ GameObject:
   - component: {fileID: 1137036284}
   - component: {fileID: 1137036283}
   - component: {fileID: 1137036282}
+  - component: {fileID: 1432913973525060291}
   m_Layer: 8
   m_Name: RightFoot
-  m_TagString: Untagged
+  m_TagString: Gertrude
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1766,6 +1797,20 @@ SpringJoint2D:
   m_Distance: 0.6364359
   m_DampingRatio: 0
   m_Frequency: 1
+--- !u!114 &1432913973525060291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137036280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8013d030d240cd346b3bc0326a6d3950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactSoundEffect: event:/Impacts/Gertrude Kicks
+  GertrudeEffort: event:/Characters/Getrude Effort
 --- !u!1 &1303177571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,6 +1863,7 @@ MonoBehaviour:
   invertAxis: 0
   timeAbs: 0
   artificialBoost: {x: 0, y: -30, z: 0}
+  roundAndSpawnManager: {fileID: 0}
 --- !u!1 &1304120705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,7 +1880,7 @@ GameObject:
   - component: {fileID: 1304120707}
   m_Layer: 8
   m_Name: UpperRightArm
-  m_TagString: Untagged
+  m_TagString: Gertrude
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1999,7 +2045,7 @@ GameObject:
   - component: {fileID: 1810135925}
   m_Layer: 8
   m_Name: RightForeArm
-  m_TagString: Untagged
+  m_TagString: Gertrude
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2165,7 +2211,7 @@ GameObject:
   - component: {fileID: 2107682425}
   m_Layer: 8
   m_Name: RightLeg
-  m_TagString: Untagged
+  m_TagString: Gertrude
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2384,3 +2430,4 @@ MonoBehaviour:
   invertAxis: 1
   timeAbs: 0
   artificialBoost: {x: 10, y: 0, z: 0}
+  roundAndSpawnManager: {fileID: 0}

@@ -45,11 +45,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 97
   targetRigidBody: {fileID: 634102734183883860}
+  mainBodyRigidBody: {fileID: 0}
   minIntensity: 10000
   maxIntensity: 20000
   timingManageScript: {fileID: 0}
   invertAxis: 1
   timeAbs: 1
+  artificialBoost: {x: 0, y: 0, z: 0}
+  roundAndSpawnManager: {fileID: 0}
 --- !u!1 &634102733327075144
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,11 +914,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 115
   targetRigidBody: {fileID: 634102733480373856}
+  mainBodyRigidBody: {fileID: 0}
   minIntensity: 8000
   maxIntensity: 20000
   timingManageScript: {fileID: 0}
   invertAxis: 1
   timeAbs: 1
+  artificialBoost: {x: 0, y: 0, z: 0}
+  roundAndSpawnManager: {fileID: 0}
 --- !u!1 &634102733995631746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,11 +1459,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 100
   targetRigidBody: {fileID: 634102733914305772}
+  mainBodyRigidBody: {fileID: 0}
   minIntensity: 10000
   maxIntensity: 25000
   timingManageScript: {fileID: 0}
   invertAxis: 0
   timeAbs: 0
+  artificialBoost: {x: 0, y: 0, z: 0}
+  roundAndSpawnManager: {fileID: 0}
 --- !u!1 &634102734643967497
 GameObject:
   m_ObjectHideFlags: 0

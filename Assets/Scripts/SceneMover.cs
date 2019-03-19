@@ -34,6 +34,12 @@ public class SceneMover : MonoBehaviour
 
     public SceneFader sceneFader;
 
+    [FMODUnity.EventRef]
+    public string GameStartSFX;
+
+    [SerializeField]
+    public GameObject MusicBox;
+
 
     //void Start()
     //{
@@ -44,8 +50,10 @@ public class SceneMover : MonoBehaviour
     {
        if(Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Escape))
        {
-           this.LoadMainScene();
-       }
+            FMODUnity.RuntimeManager.PlayOneShot(GameStartSFX);
+            MusicBox.SetActive(false);
+            this.LoadMainScene();
+        }
        if(Input.GetKeyDown(KeyCode.Escape)) {
            this.QuitGame();
        }

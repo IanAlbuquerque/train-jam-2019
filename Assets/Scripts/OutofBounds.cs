@@ -11,12 +11,16 @@ public class OutofBounds : MonoBehaviour
 
     public RoundAndSpawnManager roundAndSpawnManager;
 
+    [FMODUnity.EventRef]
+    public string RingOut;
+
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         //if(collision.gameObject.tag)
         if(collision.gameObject.CompareTag(this.tagString)) {
             this.roundAndSpawnManager.triggerPlayerRoundVictory(this.victoriousPlayerNumber);
+            FMODUnity.RuntimeManager.PlayOneShot(RingOut);
         }
     }
 }

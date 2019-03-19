@@ -40,6 +40,9 @@ public class RoundAndSpawnManager : MonoBehaviour
     
     public Text roundText;
 
+    [FMODUnity.EventRef]
+    public string RoundCountDown;
+
 
     private void Start()
     {
@@ -49,6 +52,7 @@ public class RoundAndSpawnManager : MonoBehaviour
         this.roundText.text = "Round " + this.roundNumber.ToString();
         this.messageText.text = "Prepare for Battle!";
         this.roundStartAnimator.SetTrigger("run");
+        FMODUnity.RuntimeManager.PlayOneShot(RoundCountDown);
     }
 
     private void Update() {
@@ -93,7 +97,7 @@ public class RoundAndSpawnManager : MonoBehaviour
         this.roundNumber++;
         this.roundText.text = "Round " + this.roundNumber.ToString();
         this.canControlCharacters = false;
-        if(playerNumber == 1) {
+        if (playerNumber == 1) {
             this.player1Manager.numberOfWins += 1;
         } else {
             this.player2Manager.numberOfWins += 1;
@@ -103,6 +107,11 @@ public class RoundAndSpawnManager : MonoBehaviour
         } else if(this.player2Manager.numberOfWins >= this.numRoundsToWin) {
             this.triggerPlayerOverallVictory(2);
         }
+        if (this.player1Manager.numberOfWins <= 2  && this.player2Manager.numberOfWins <= 2)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(RoundCountDown);
+        }
+        else { return; }
 
         this.DespawnPlayers();
         this.SpawnPlayers();

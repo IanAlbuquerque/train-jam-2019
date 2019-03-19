@@ -52,6 +52,7 @@ MonoBehaviour:
   invertAxis: 1
   timeAbs: 1
   artificialBoost: {x: 0, y: 10, z: 0}
+  roundAndSpawnManager: {fileID: 0}
 --- !u!1 &45198802
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +104,7 @@ GameObject:
   - component: {fileID: 153398070}
   m_Layer: 9
   m_Name: LeftLowerLeg
-  m_TagString: Untagged
+  m_TagString: Jerry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -284,9 +285,10 @@ GameObject:
   - component: {fileID: 206033480}
   - component: {fileID: 206033479}
   - component: {fileID: 206033478}
+  - component: {fileID: 5995820750060607232}
   m_Layer: 9
   m_Name: LeftFoot
-  m_TagString: Untagged
+  m_TagString: Jerry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -434,6 +436,20 @@ SpringJoint2D:
   m_Distance: 0.005
   m_DampingRatio: 0
   m_Frequency: 1
+--- !u!114 &5995820750060607232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206033476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d2de816cee0f043b6079829083896e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactSoundEffect: event:/Impacts/Jerry Kicks
+  JerryEffort: event:/Characters/Jerry Effort
 --- !u!1 &445211227
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +467,7 @@ GameObject:
   - component: {fileID: 445211229}
   m_Layer: 9
   m_Name: LeftLeg
-  m_TagString: Untagged
+  m_TagString: Jerry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -633,7 +649,7 @@ GameObject:
   - component: {fileID: 471087508}
   m_Layer: 9
   m_Name: Hand
-  m_TagString: Untagged
+  m_TagString: Jerry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -775,9 +791,10 @@ GameObject:
   - component: {fileID: 626419161}
   - component: {fileID: 626419160}
   - component: {fileID: 626419159}
+  - component: {fileID: 60981021656352472}
   m_Layer: 9
   m_Name: Hand (1)
-  m_TagString: Untagged
+  m_TagString: Jerry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -925,6 +942,20 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &60981021656352472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626419157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d2de816cee0f043b6079829083896e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactSoundEffect: event:/Impacts/Jerry Punchs
+  JerryEffort: event:/Characters/Jerry Effort
 --- !u!1 &627676677
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,7 +972,7 @@ GameObject:
   - component: {fileID: 627676679}
   m_Layer: 9
   m_Name: RightLowerLeg
-  m_TagString: Untagged
+  m_TagString: Jerry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1105,7 +1136,7 @@ GameObject:
   - component: {fileID: 633387515}
   m_Layer: 9
   m_Name: LeftForeArm
-  m_TagString: Untagged
+  m_TagString: Jerry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1250,7 +1281,7 @@ GameObject:
   - component: {fileID: 2748068982785270947}
   m_Layer: 9
   m_Name: JerryPrefab
-  m_TagString: Untagged
+  m_TagString: Jerry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1418,7 +1449,7 @@ GameObject:
   - component: {fileID: 7734025406921147357}
   m_Layer: 9
   m_Name: UpperLeftArm
-  m_TagString: Untagged
+  m_TagString: Jerry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1636,9 +1667,10 @@ GameObject:
   - component: {fileID: 1137036284}
   - component: {fileID: 1137036283}
   - component: {fileID: 1137036282}
+  - component: {fileID: 6536271963439215911}
   m_Layer: 9
   m_Name: RightFoot
-  m_TagString: Untagged
+  m_TagString: Jerry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1786,6 +1818,19 @@ SpringJoint2D:
   m_Distance: 12.151712
   m_DampingRatio: 0
   m_Frequency: 1
+--- !u!114 &6536271963439215911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137036280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60376a6d6a23504d963b2fdf33886ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FootstepsPlay: event:/Characters/Footsteps
 --- !u!1 &1303177571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,6 +1883,7 @@ MonoBehaviour:
   invertAxis: 1
   timeAbs: 1
   artificialBoost: {x: 0, y: -30, z: 0}
+  roundAndSpawnManager: {fileID: 0}
 --- !u!1 &1304120705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,7 +1900,7 @@ GameObject:
   - component: {fileID: 1304120707}
   m_Layer: 9
   m_Name: UpperRightArm
-  m_TagString: Untagged
+  m_TagString: Jerry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2019,7 +2065,7 @@ GameObject:
   - component: {fileID: 1810135925}
   m_Layer: 9
   m_Name: RightForeArm
-  m_TagString: Untagged
+  m_TagString: Jerry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2185,7 +2231,7 @@ GameObject:
   - component: {fileID: 2107682425}
   m_Layer: 9
   m_Name: RightLeg
-  m_TagString: Untagged
+  m_TagString: Jerry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2404,6 +2450,7 @@ MonoBehaviour:
   invertAxis: 0
   timeAbs: 1
   artificialBoost: {x: -10, y: 0, z: 0}
+  roundAndSpawnManager: {fileID: 0}
 --- !u!1 &8300207973265367838
 GameObject:
   m_ObjectHideFlags: 0
