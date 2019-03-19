@@ -6,6 +6,8 @@ TagManager:
   tags:
   - TriggerPlayer1
   - TriggerPlayer2
+  - Gertrude
+  - Jerry
   layers:
   - Default
   - TransparentFX
