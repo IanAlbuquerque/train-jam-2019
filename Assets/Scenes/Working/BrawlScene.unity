@@ -850,6 +850,11 @@ PrefabInstance:
       propertyPath: RoundCountDown
       value: event:/Round/Round Begin Bell
       objectReference: {fileID: 0}
+    - target: {fileID: 6512161822898669488, guid: 42b7cf1bea14a0445bbca65d7424e613,
+        type: 3}
+      propertyPath: numRoundsToWin
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1764603077, guid: 42b7cf1bea14a0445bbca65d7424e613, type: 3}
       propertyPath: spawnPoint
       value: 
@@ -2563,7 +2568,7 @@ PrefabInstance:
     - target: {fileID: 4740572593791250443, guid: cdf870b88806c0a4bb7229db2b5a0aec,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4740572593791250441, guid: cdf870b88806c0a4bb7229db2b5a0aec,
         type: 3}
