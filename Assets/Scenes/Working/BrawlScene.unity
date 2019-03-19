@@ -1497,6 +1497,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &827696606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 827696609}
+  - component: {fileID: 827696608}
+  - component: {fileID: 827696607}
+  m_Layer: 0
+  m_Name: Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &827696607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827696606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d243f582c4762b5459c058b3783de548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+  startConvoButton: {fileID: 0}
+  dialogueManager: {fileID: 827696608}
+--- !u!114 &827696608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827696606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a01ece00d69bb43ac3384073862d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  dialogueText: {fileID: 0}
+  animator: {fileID: 0}
+--- !u!4 &827696609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827696606}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.16497414, y: 3.6946733, z: -9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &881125560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,7 +1788,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: cc6579362bf0bc94eba11c5e3e209bfe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.40392157}
   m_FlipX: 0
@@ -2373,7 +2447,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: cc6579362bf0bc94eba11c5e3e209bfe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.40392157}
   m_FlipX: 0
@@ -2568,7 +2642,7 @@ PrefabInstance:
     - target: {fileID: 4740572593791250443, guid: cdf870b88806c0a4bb7229db2b5a0aec,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4740572593791250441, guid: cdf870b88806c0a4bb7229db2b5a0aec,
         type: 3}
