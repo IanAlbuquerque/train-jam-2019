@@ -26,6 +26,8 @@ public class SceneMover : MonoBehaviour
 
     public string dogFightMainGame = "BrawlScene";
 
+    public string instructionScene = "IntroInstructions";
+
     public string creditsScene = "Credits";
 
     public string mainMenuScene = "MainMenu";
@@ -52,11 +54,18 @@ public class SceneMover : MonoBehaviour
        {
             FMODUnity.RuntimeManager.PlayOneShot(GameStartSFX);
             MusicBox.SetActive(false);
-            this.LoadMainScene();
+            //this.LoadMainScene();
+            this.LoadIntroScene();
         }
-       if(Input.GetKeyDown(KeyCode.Escape)) {
+       if(Input.GetKeyDown(KeyCode.Escape))
+       {
            this.QuitGame();
        }
+    }
+
+    public void LoadIntroScene()
+    {
+        sceneFader.FadeTo(instructionScene);
     }
 
     public void LoadMainScene()

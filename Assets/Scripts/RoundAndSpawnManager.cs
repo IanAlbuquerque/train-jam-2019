@@ -9,7 +9,6 @@ public class RoundAndSpawnManager : MonoBehaviour
     public int numRoundsToWin = 3;            
     public float roundStartDelay = 3f;
     public float roundEndDelay = 3f;
-    // public CameraController camControl;
     public Text messageText;
     public GameObject player1Prefab; 
     public GameObject player2Prefab;
@@ -43,6 +42,10 @@ public class RoundAndSpawnManager : MonoBehaviour
     [FMODUnity.EventRef]
     public string RoundCountDown;
 
+    public ParticleSystem endGamePawticle;
+
+    public ParticleSystem endRoundPawticle;
+
 
     private void Start()
     {
@@ -74,18 +77,10 @@ public class RoundAndSpawnManager : MonoBehaviour
     }
 
 
-    // private void SetCameraTargets()
-    // {
-    //     Transform[] targets = new Transform[playerArray.Length];
-
-    //     for (int i = 0; i < targets.Length; i++)
-    //     {
-    //         targets[i] = playerArray[i].instanceOfPlayer.transform;
-    //     }
-
-    // }
-
-    private void triggerPlayerOverallVictory(int playerNumber) {
+    private void triggerPlayerOverallVictory(int playerNumber)
+    {
+        //Instantiate(endGamePawticle, player1Manager.transform.position - player2Manager.transform.position, player1Manager.transform.rotation);
+        endGamePawticle.Play();
         this.sceneFader.FadeTo(playerNumber==1?this.winSceneGertrude:this.winSceneJerry);
     }
 
@@ -93,7 +88,10 @@ public class RoundAndSpawnManager : MonoBehaviour
         this.canControlCharacters = true;
     }
 
-    public void triggerPlayerRoundVictory(int playerNumber) {
+    public void triggerPlayerRoundVictory(int playerNumber)
+    {
+        //Instantiate(endRoundPawticle, player1Manager.transform.position - player2Manager.transform.position, player1Manager.transform.rotation);
+        endRoundPawticle.Play();
         this.roundNumber++;
         this.roundText.text = "Round " + this.roundNumber.ToString();
         this.canControlCharacters = false;

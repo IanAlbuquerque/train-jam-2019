@@ -14,12 +14,16 @@ public class OutofBounds : MonoBehaviour
     [FMODUnity.EventRef]
     public string RingOut;
 
+    public CameraShake camShaker;
+
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         //if(collision.gameObject.tag)
-        if(collision.gameObject.CompareTag(this.tagString)) {
+        if(collision.gameObject.CompareTag(this.tagString))
+        {
             this.roundAndSpawnManager.triggerPlayerRoundVictory(this.victoriousPlayerNumber);
+            camShaker.Shake(1f, 30f);
             FMODUnity.RuntimeManager.PlayOneShot(RingOut);
         }
     }

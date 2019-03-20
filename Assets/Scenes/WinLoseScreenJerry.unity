@@ -138,22 +138,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 680195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0577c65c96fa07a478de1144a1d8a989, type: 3}
+  m_Script: {fileID: 11500000, guid: 29c16d140fbf3cd45a2b83d7d303c812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startButton: {fileID: 0}
-  creditsButton: {fileID: 0}
-  quitButton: {fileID: 0}
-  nextOnInstructionsButton: {fileID: 0}
-  returnToMainMenuButton: {fileID: 0}
-  pauseAnim: {fileID: 0}
-  dogFightMainGame: MainMenu
-  creditsScene: Credits
-  mainMenuScene: MainMenu
-  winLoseScene: WinLoseScreen
   sceneFader: {fileID: 1896120530}
-  GameStartSFX: event:/UI/BackToMainMenu
-  MusicBox: {fileID: 1306003645}
+  menuScene: MainMenu
 --- !u!4 &680197
 Transform:
   m_ObjectHideFlags: 0
@@ -1287,7 +1276,7 @@ PrefabInstance:
     - target: {fileID: 4740572593791250443, guid: cdf870b88806c0a4bb7229db2b5a0aec,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4740572593791250441, guid: cdf870b88806c0a4bb7229db2b5a0aec,
         type: 3}

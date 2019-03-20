@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Working/MainMenu.unity
     guid: 51218fee7cf6e2f45aea33a4b01c92d4
   - enabled: 1
+    path: Assets/Scenes/Working/IntroInstructions.unity
+    guid: db5a4d4d69839e84185d0e0432be1fda
+  - enabled: 1
     path: Assets/Scenes/Working/BrawlScene.unity
     guid: f4e99c201b4cc49419293db2658684f6
   - enabled: 1
